@@ -16,6 +16,11 @@ VideoData videoData = VideoData();
 
 class _ShortsScreenState extends State<ShortsScreen> {
   late PageController _pageController;
+  @override
+  void initState() {
+    _pageController = PageController();
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -117,10 +122,10 @@ class _ShortsListState extends State<ShortsList> {
                 ],
               ),
               SizedBox(
-                height: h * 0.7,
+                height: h * 0.79,
               ),
               Positioned(
-                  top: -10,
+                  top: 0.0,
                   bottom: 0.0,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
